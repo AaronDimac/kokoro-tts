@@ -2,10 +2,14 @@
 
 This checkout is configured for direct `.wav` generation so you can drop output files into a Unity project.
 
+For the step-by-step narration workflow, use `NARRATION_WAV_WORKFLOW.md`.
+
 Default runtime behavior:
 
 - Voice: `af_sarah`
 - Accent target: clear neutral American female narration
+- Language: `en-us`
+- Speed: `0.96`
 - ONNX provider: auto-selects `CUDAExecutionProvider` when available, preloads ONNX Runtime CUDA/cuDNN libraries, otherwise falls back to CPU
 
 ## What is installed
@@ -27,7 +31,7 @@ scripts/generate_wav.sh /path/to/input.txt /path/to/output.wav
 Example:
 
 ```bash
-scripts/generate_wav.sh ./example.txt ./example.wav --voice af_heart --speed 1.1
+scripts/generate_wav.sh ./example.txt ./example.wav --voice af_sarah --speed 0.96
 ```
 
 ## Output directly into Unity
@@ -71,13 +75,13 @@ Or:
 .\scripts\generate_body_wavs.cmd
 ```
  
-## Helpful options
+## Narration preset
+
+Use this narration preset for project audio generation:
 
 - `--voice af_sarah`
-- `--voice am_adam`
-- `--voice "af_sarah:60,am_adam:40"`
-- `--speed 0.9`
 - `--lang en-us`
+- `--speed 0.96`
 
 To force a specific provider manually:
 

@@ -2,6 +2,12 @@
 
 A CLI text-to-speech tool using the Kokoro model, supporting multiple languages, voices (with blending), and various input formats including EPUB books and PDF documents.
 
+## Narration WAV Workflow
+
+This fork includes a project-specific workflow for generating narration `.wav` files from `script.md`.
+
+Start with `NARRATION_WAV_WORKFLOW.md`.
+
 ![ngpt-s-c](https://raw.githubusercontent.com/nazdridoy/kokoro-tts/main/previews/kokoro-tts-h.png)
 
 ## Features
