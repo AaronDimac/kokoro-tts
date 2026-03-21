@@ -1,0 +1,47 @@
+[
+  {
+    "step_id": "07.1",
+    "title": "",
+    "body": "Now, we'll remove Fan Blade #8, place it on the service trolley, and label it for service. Press OK to continue.",
+    "spoken_text": "Now, we'll remove Fan Blade number eight, place it on the service trolley, and label it for service. Press okay to continue.",
+    "file": "step_07_1.wav",
+    "sample_rate": 24000,
+    "duration_seconds": 7.49
+  },
+  {
+    "step_id": "07.2",
+    "title": "",
+    "body": "Carefully pull out fan blade #8, outward from the assembly.",
+    "spoken_text": "Carefully pull out fan blade number eight, outward from the assembly.",
+    "file": "step_07_2.wav",
+    "sample_rate": 24000,
+    "duration_seconds": 3.97
+  },
+  {
+    "step_id": "07.3",
+    "title": "",
+    "body": "Good job! Place Fan Blade #8 on the service trolley.",
+    "spoken_text": "Good job! Place Fan Blade number eight on the service trolley.",
+    "file": "step_07_3.wav",
+    "sample_rate": 24000,
+    "duration_seconds": 3.5
+  },
+  {
+    "step_id": "07.4",
+    "title": "",
+    "body": "We will now label the blade '#8' to preserve balance tracking. Press OK to continue.",
+    "spoken_text": "We will now label the blade 'number eight' to preserve balance tracking. Press okay to continue.",
+    "file": "step_07_4.wav",
+    "sample_rate": 24000,
+    "duration_seconds": 5.46
+  },
+  {
+    "step_id": "07.5",
+    "title": "",
+    "body": "Excellent! Fan Blade #8 is on the trolley and labelled for service. Press OK to finish.",
+    "spoken_text": "Excellent! Fan Blade number eight is on the trolley and labelled for service. Press okay to finish.",
+    "file": "step_07_5.wav",
+    "sample_rate": 24000,
+    "duration_seconds": 5.8
+  }
+]

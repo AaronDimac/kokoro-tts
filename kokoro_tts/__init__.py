@@ -17,7 +17,12 @@ import numpy as np
 from ebooklib import epub, ITEM_DOCUMENT
 from bs4 import BeautifulSoup
 import soundfile as sf
-import sounddevice as sd
+try:
+    import sounddevice as sd
+    SOUNDDEVICE_IMPORT_ERROR = None
+except OSError as exc:
+    sd = None
+    SOUNDDEVICE_IMPORT_ERROR = exc
 from kokoro_onnx import Kokoro
 import pymupdf4llm
 import fitz
@@ -1065,6 +1070,12 @@ async def stream_audio(kokoro, text, voice, speed, lang, debug=False):
     global stop_spinner, stop_audio
     stop_spinner = False
     stop_audio = False
+
+    if sd is None:
+        print("Error: Streaming audio requires PortAudio.")
+        print(f"Details: {SOUNDDEVICE_IMPORT_ERROR}")
+        print("Use file output mode to generate .wav or .mp3 files instead.")
+        sys.exit(1)
     
     print("Starting audio stream...")
     chunks = chunk_text(text, initial_chunk_size=1000)
@@ -1390,4 +1401,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
