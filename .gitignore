@@ -12,6 +12,7 @@ test.*
 *.mp3
 book_audio/
 chunks/
+generated/*_wavs/
 
 *.npz
 *.bin
